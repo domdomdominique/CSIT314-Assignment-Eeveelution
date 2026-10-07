@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eeveelution</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+</head>
+<body>
+  <main class="container">
+    <nav>
+      <ul><li><strong>Eeveelution</strong></li></ul>
+      {% if session.user_id %}<ul><li><a href="{{ url_for('auth.logout') }}">Log out</a></li></ul>{% endif %}
+    </nav>
+    {% for message in get_flashed_messages() %}<p role="alert">{{ message }}</p>{% endfor %}
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>
