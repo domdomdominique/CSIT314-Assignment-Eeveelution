@@ -14,8 +14,8 @@ An online platform matching renovation customers to interior designers, built wi
 ## Clone the Repository
 
 ```
-git clone https://github.com/domdomdominique/CSIT314-Assignment-Eeveelution.git
-code CSIT314-Assignment-Eeveelution
+git clone https://github.com/domdomdominique/CSIT314-Eeveelution.git
+code CSIT314-Eeveelution
 ```
 
 
@@ -36,7 +36,7 @@ Run tests: `pytest -v`
 ## Structure (B-C-E)
 
 ```
-CSIT314-Assignment-Eeveelution/
+CSIT314-Eeveelution/
 ├── app/
 │   ├── boundary/            Routes + pages, one file per actor
 │   │   ├── auth_boundary.py      LoginPage
